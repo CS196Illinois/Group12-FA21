@@ -14,6 +14,9 @@ export class MainMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClick() {
+    console.log("THIS WAS CLICKED");
+  }
   onLogin() {
     this.loginStatus = "Logged in";
   }
