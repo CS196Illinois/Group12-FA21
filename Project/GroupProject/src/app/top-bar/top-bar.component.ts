@@ -12,4 +12,13 @@ export class TopBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  oginStatus = 'Not logged in';
+
+  onClick() {
+    console.log("THIS WAS CLICKED");
+  }
+  
+  // onLogin() {
+  //   this.loginStatus = "Logged in";
+  // }
 }

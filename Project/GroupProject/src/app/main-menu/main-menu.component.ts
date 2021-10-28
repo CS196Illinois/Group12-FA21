@@ -17,6 +17,7 @@ export class MainMenuComponent implements OnInit {
   onClick() {
     console.log("THIS WAS CLICKED");
   }
+  
   onLogin() {
     this.loginStatus = "Logged in";
   }
