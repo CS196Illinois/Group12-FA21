@@ -1,0 +1,50 @@
+  .mainbar {
+    // position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #2a4969;
+    color: white;
+    font-weight: 600;
+  }
+
+  .mainbar img {
+    margin: 0 25px;
+  }
+
+  .card {
+  all: unset;
+  border-radius: 4px; //this is where u can change the shape
+  border: 1px solid #ffffff;
+  background-color: #3d566e;
+  height: 10px;
+  width: 50px;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+
+  // transition: all 0.2s ease-in-out;
+  // line-height: 24px;
+}
+
+.card-container {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  //align-items: flex-end;
+  margin-top: 16px;
+  //margin-right: absolute;
+  //align-self: right;
+  //right: 0;
+}
+
+
+
+
