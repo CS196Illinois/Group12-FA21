@@ -8,6 +8,7 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
 import { TemplateComponent } from './template/template.component';
 import { ItemPreviewComponent } from './item-preview/item-preview.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     MainMenuComponent,
     TemplateComponent,
     ItemPreviewComponent,
-    TopBarComponent
+    TopBarComponent,
+    EditProfileComponent
   ],
   imports: [
     BrowserModule,
