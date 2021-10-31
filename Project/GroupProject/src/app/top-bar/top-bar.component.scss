@@ -1,21 +1,22 @@
-  .mainbar {
-    // position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    background-color: #2a4969;
-    color: white;
-    font-weight: 600;
-  }
+.mainbar {
+  // position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  display: flex;
+  margin: 0 8px 16px;
+  align-items: center;
+  background-color: #2a4969;
+  color: white;
+  font-weight: 600;
+}
 
-  .mainbar img {
-    margin: 0 25px;
-  }
+.mainbar img {
+  margin: 0 25px;
+}
 
-  .card {
+.card {
   all: unset;
   border-radius: 4px; //this is where u can change the shape
   border: 1px solid #ffffff;
@@ -28,7 +29,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  right: 0;
 
   // transition: all 0.2s ease-in-out;
   // line-height: 24px;

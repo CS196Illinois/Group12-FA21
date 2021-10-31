@@ -1,0 +1,35 @@
+.itemPreview {
+    margin: 30px;
+    display: block;
+}
+
+
+
+.card {
+  all: unset;
+  border-radius: 4px; //this is where u can change the shape
+  border: 1px solid #ffffff;
+  background-color: #3d566e;
+  height: 10px;
+  width: 50px;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  // transition: all 0.2s ease-in-out;
+  // line-height: 24px;
+}
+
+.card-container {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  //align-items: flex-end;
+  margin-top: 16px;
+  //margin-right: absolute;
+  //align-self: right;
+  //right: 0;
+}
