@@ -4,16 +4,29 @@
   left: 0;
   right: 0;
   height: 100px;
-  display: flex;
+  //display: flex;
   align-items: center;
   background-color: #2a4969;
   color: white;
   font-weight: 600;
+  display: flex;
+  justify-content: space-between;
 }
 
 .mainbar img {
   margin: 0 25px;
 }
+
+.rightSide {
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
+}
+.leftSide {
+  display: flex;
+  flex-direction: row;
+}
+
 
 .card {
   all: unset;
