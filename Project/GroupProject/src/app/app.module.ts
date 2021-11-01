@@ -9,6 +9,7 @@ import { TemplateComponent } from './template/template.component';
 import { ItemPreviewComponent } from './item-preview/item-preview.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EditProfileComponent } from './edit-profile/edit-profile.component';
     TemplateComponent,
     ItemPreviewComponent,
     TopBarComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
