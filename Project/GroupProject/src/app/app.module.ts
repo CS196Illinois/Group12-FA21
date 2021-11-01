@@ -9,7 +9,7 @@ import { TemplateComponent } from './template/template.component';
 import { ItemPreviewComponent } from './item-preview/item-preview.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
-import { TestingComponentComponent } from './testing-component/testing-component.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { TestingComponentComponent } from './testing-component/testing-component
     ItemPreviewComponent,
     TopBarComponent,
     EditProfileComponent,
-    TestingComponentComponent
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
