@@ -8,6 +8,7 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
 import { TemplateComponent } from './template/template.component';
 import { ItemPreviewComponent } from './item-preview/item-preview.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { ItemEditComponent } from './item-edit/item-edit.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { ProfileComponent } from './profile/profile.component';
 
@@ -19,6 +20,7 @@ import { ProfileComponent } from './profile/profile.component';
     TemplateComponent,
     ItemPreviewComponent,
     TopBarComponent,
+    ItemEditComponent,
     EditProfileComponent,
     ProfileComponent
   ],
