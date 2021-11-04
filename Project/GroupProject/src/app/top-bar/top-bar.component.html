@@ -5,21 +5,26 @@
 
 <!-- Top Bar -->
 <div class="mainbar" role="banner">
-    <img
-      width="80"
-      alt="Quackhead Logo"
-      src="/assets/DuckLogo" alt="image"
-    />
-    <h1>UniSell</h1>
+    <div class="leftSide">
+        <img
+        width="80"
+        alt="Quackhead Logo"
+        src="/assets/DuckLogo" alt="image"
+        />
+        <h1>UniSell</h1>
+    </div>
     
+    <div class="rightSide">
+        <div class="card-container">
+            <button class="card card-small" (click)="onClick()">Login</button>
+        </div>
+        
+        <div class="card-container">
+            <button class="card card-small" (click)="onClick()">Profile</button>
+        </div>
+    </div>
 
-    <div class="card-container">
-        <button class="card card-small" (click)="onClick()">Login</button>
-    </div>
     
-    <div class="card-container">
-        <button class="card card-small" (click)="onClick()">Profile</button>
-    </div>
 
     <!--
     <div class="card-container">

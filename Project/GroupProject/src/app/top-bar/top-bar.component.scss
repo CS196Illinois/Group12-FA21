@@ -1,20 +1,32 @@
 .mainbar {
-  // position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
   height: 100px;
-  display: flex;
-  margin: 0 8px 16px;
+  //display: flex;
   align-items: center;
   background-color: #2a4969;
   color: white;
   font-weight: 600;
+  display: flex;
+  justify-content: space-between;
 }
 
 .mainbar img {
   margin: 0 25px;
 }
+
+.rightSide {
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
+}
+.leftSide {
+  display: flex;
+  flex-direction: row;
+}
+
 
 .card {
   all: unset;
@@ -41,7 +53,7 @@
   //align-items: flex-end;
   margin-top: 16px;
   //margin-right: absolute;
-  //align-self: right;
+  align-self: right;
   //right: 0;
 }
 

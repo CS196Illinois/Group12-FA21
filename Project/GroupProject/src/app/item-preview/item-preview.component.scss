@@ -1,35 +1,58 @@
+
+
+
 .itemPreview {
-    margin: 30px;
-    display: block;
+  margin: 16px;
 }
-
-
-
 .card {
-  all: unset;
-  border-radius: 4px; //this is where u can change the shape
-  border: 1px solid #ffffff;
-  background-color: #3d566e;
-  height: 10px;
-  width: 50px;
-  margin: 0 8px 16px;
-  padding: 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  // transition: all 0.2s ease-in-out;
-  // line-height: 24px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  max-width: 250px;
+  max-height: 350px;
 }
 
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+
+/*
+.itemPreview {
+  margin: 30px;
+  display: block;
+}
+.card {
+all: unset;
+border-radius: 4px; //this is where u can change the shape
+border: 1px solid #ffffff;
+background-color: #3d566e;
+height: 10px;
+width: 50px;
+margin: 0 8px 16px;
+padding: 16px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+// transition: all 0.2s ease-in-out;
+// line-height: 24px;
+}
 .card-container {
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  //align-items: flex-end;
-  margin-top: 16px;
-  //margin-right: absolute;
-  //align-self: right;
-  //right: 0;
-}
+// display: flex;
+// flex-wrap: wrap;
+// justify-content: center;
+//align-items: flex-end;
+margin-top: 16px;
+//margin-right: absolute;
+//align-self: right;
+//right: 0;
+} */
+
+
