@@ -1,22 +1,34 @@
 <app-top-bar></app-top-bar> 
-<h1>Item Description</h1>
-<div>
-<iframe width="300" height="300" style="border:1px solid black;">
-  <label for="fname">Image:</label><br>
-  <img
-      alt="Product Image"
-      src="/assets/DuckLogo" alt="image"
-    />
-</iframe>
+
+<link rel="stylesheet" href="item-edit.component.scss">
+
+<div class="editProfile" style="text-align: center; border: 3px; border-color: black;">
+    
+    <h1>Add New Item:</h1>
+    <div class="information">
+    
+        <form action="/action_page.php" method="get">
+          <label for = "file-upload-input">Upload Item Image:</label><br>
+          <input class= "file-upload-input" type="file" onchange="readURL(this)" accept="Image/"><br>
+          <p></p>
+            <label for = "iname">Item name:</label><br>
+            <input type="text" id="iname12" name="iname"><br>
+          <p></p>
+          <label for = "price">Item Price:</label><br>
+          <label for = "price">$</label>
+            <input type="number" id="price12" name="price" min="0.01" step="0.01" max="2500" value="00.00"><br>
+          <p></p>
+            <label for = "itemDescription">Item Description:</label><br>
+            <textarea name="itemDescription" id=itemDescription12> </textarea>
+          <p></p>
+            <button type="submit" name="Submit">Submit</button>
+            <input type="submit" value="Update">
+        </form>
+    </div>
 </div>
-<div>
-<p style="text-align:center;">Item Description</p>
-</div>
-<form>
-  <label for = "fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-</form>
-<form>
-  <label for = "lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname"><br>
-</form>
+
+
+
+
+
+
