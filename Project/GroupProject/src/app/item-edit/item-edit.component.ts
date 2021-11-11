@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-item-edit',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemEditComponent implements OnInit {
 
+  itemEditForm = new FormGroup({
+    iname: new FormControl(''),
+    price: new FormControl(''),
+    itemDescription: new FormControl('')
+  });
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  test() {
+    console.log(this.itemEditForm.value)
   }
 
 }
