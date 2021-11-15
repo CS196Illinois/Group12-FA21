@@ -1,36 +1,24 @@
 
+<!--
+info=[
+    {
+        "title",
+        "price"
+    }
+]
 
-<div class="itemPreview2" role="menuitem">
-    <!-- This is where the product image is 
-    <img  
-        width=200
-        alt="ItemImage"
+<div ngFor="idrk bro">
+    {{info}}
+</div> -->
 
-    /> -->
-
-</div>
 
 
 <div class="itemPreview" role="menuitem">
-    <!-- This is where the product image is -->
-
-    <!--
-    <iframe width="300" height="300" style="border:1px solid black;">
-    </iframe>
-
-    <h3>Title</h3>
-    <h5>Price</h5>
-
-    <div class="card-container">
-        <button type="button">Learn More</button>
-    </div> -->
-   
     <div class="card">
         <img src="/assets/DuckLogo" alt="Avatar">
         <div class="container">
-          <h4><b>Ducky</b></h4>
-          <p>Price: $1</p>
+          <h4><b>{{title}}</b></h4>
+          <p>Price: ${{price}}</p>
         </div>
     </div>
-
 </div>
