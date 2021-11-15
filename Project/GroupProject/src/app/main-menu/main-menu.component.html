@@ -2,14 +2,24 @@
 <app-top-bar></app-top-bar> <!-- -->
 
 <!-- <app-search-bar></app-search-bar> -->
-      
+ 
+<!--
+variables=[
+    searchButton,
+    filterButton
+]
+
+<div ngFor="let person at people">
+    {{variables}}
+</div>
+-->
 
 <div class="search-container">
     <form action="/action_page.php">
        <input type="text" placeholder="Search.." name="search">
        <i> </i>
        <button type="button" style="margin:20px">Search</button>
-       <button type="button">Apply Filter</button>
+       <button type="button" >Apply Filter</button>
 
     </form>
 </div>
