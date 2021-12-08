@@ -1,17 +1,40 @@
-from flask import Flask
-#import pymongo
-#from pymongo import MongoClient
+from flask import Flask, request, jsonify
+app = Flask(__name__)
 
-cluster = MongoClient("mongodb+srv://srkethireddy:4qhe9j@cluster0.hlsqe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+items_database = []
 
-db = cluster["Items"]
-collection = db["Item"]
 
-post1 = {"_id": 0, "name": "Duck", "price": 500, "Description": "A very good duck"}
-post2 = {"_id": 0, "name": "Even Better Duck", "price": 1000, "Description": "A very good duck"  }
 
-collection.insert_many([post1, post2])
 
-# results = collection.find({"name" : "Duck"})
-#for result in results: 
-#    print(result)
+@app.route('/', method=["GET"])
+def getAllItems():
+    return jsonify(items_database), 200
+
+
+@app.route('/', method=["POST"])
+def craeteItem():
+    #GOOGLE HOW TO GET INFORMATION FROM BODY OF A POST might be requests.request(body)
+    localDic = {} #fill out the local dict with information retrieved
+    items_database.append(items_database)
+    return jsonify(last item), 200
+
+
+@app.route('/<itemID>', method=["GET"])
+def getAllItems():
+    # Find the item 
+    #return the item
+    return jsonify(items_database), 200
+
+
+@app.route('/<itemID>', method=["PUT"])
+def updateItem():
+    # Find item and update it
+    # return updated item
+    return jsonify(items_database), 200
+
+
+@app.route('/<itemID>', method=["DELETE"])
+def updateItem():
+    # Find item and delete it
+    # return deleted item
+    return jsonify(items_database), 200
