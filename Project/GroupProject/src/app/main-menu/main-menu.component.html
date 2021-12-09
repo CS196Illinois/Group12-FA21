@@ -26,7 +26,7 @@ variables=[
 
 
 <div class="itemSet">
-    <div *ngFor="let item of items">
+    <div *ngFor="let item of items" [routerLink]="['/item-menu']">
         <div class="itemPreview" role="menuitem">
             <div class="card">
                 <img src="/assets/DuckLogo" alt="Avatar">

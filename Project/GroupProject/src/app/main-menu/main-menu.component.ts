@@ -31,7 +31,7 @@ export class MainMenuComponent implements OnInit {
       .get<any>("http://127.0.0.1:5000/")
       .toPromise().then(response => {
         console.log(response)
-        this.items = response;
+        // this.items = response;
       }
     )
   }

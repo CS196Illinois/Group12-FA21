@@ -5,12 +5,17 @@ items_database = []
 
 @app.route('/test', methods=["GET"])
 def helloWorldTest():
+    response = jsonify({'some': 'data'})
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response, 200
     return jsonify({"message": "Hello World"}), 200
 
 
 @app.route('/', methods=["GET"])
 def getAllItems():
-    return jsonify(items_database), 200
+    response = jsonify(items_database)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response, 200
 
 
 @app.route('/', methods=["POST"])
