@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
@@ -14,13 +15,20 @@ export class ItemEditComponent implements OnInit {
     itemDescription: new FormControl('')
   });
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
   }
 
-  test() {
+  async submit() {
     console.log(this.itemEditForm.value)
+
+    await this.http
+      .post<any>(URL, 
+        {
+
+        }
+      ).toPromise().then()
   }
 
 }

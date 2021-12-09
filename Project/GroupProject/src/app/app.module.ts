@@ -13,6 +13,7 @@ import { ItemEditComponent } from './item-edit/item-edit.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ItemCreateComponent } from './item-create/item-create.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TopBarComponent,
     ItemEditComponent,
     EditProfileComponent,
-    ProfileComponent
+    ProfileComponent,
+    ItemCreateComponent
   ],
   imports: [
     BrowserModule,
