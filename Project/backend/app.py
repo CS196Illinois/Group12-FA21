@@ -5,21 +5,21 @@ app = Flask(__name__)
 items_database = [
     {
         "ItemID": 0,
-        "ItemName": "Base Name",
-        "ItemDescription": "Base Description",
-        "ItemPrice": "Base Price"
+        "ItemName": "Duck",
+        "ItemDescription": "A very good duck",
+        "ItemPrice": "$1000"
     },
     {
         "ItemID": 1,
-        "ItemName": "Base Name1",
-        "ItemDescription": "Base Description",
-        "ItemPrice": "Base Price"
+        "ItemName": "Better Duck",
+        "ItemDescription": "An even better duck",
+        "ItemPrice": "$2000"
     },
     {
         "ItemID": 2,
-        "ItemName": "Base Name2",
-        "ItemDescription": "Base Description",
-        "ItemPrice": "Base Price"
+        "ItemName": "Best Duck",
+        "ItemDescription": "The best duck",
+        "ItemPrice": "$30000"
     }
 ]
 
