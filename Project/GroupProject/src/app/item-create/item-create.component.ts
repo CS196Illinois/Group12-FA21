@@ -35,6 +35,20 @@ export class ItemCreateComponent implements OnInit {
         console.log(response)
       }
     )
+
+    await this.http
+      .put<any>('http://127.0.0.1:5000/', 
+        {
+          ItemName: this.itemCreateForm.value.iname,
+          ItemPrice: this.itemCreateForm.value.price,
+          ItemDescription: this.itemCreateForm.value.itemDescription
+        }
+      ).toPromise().then( response => {
+        console.log(response)
+      }
+    )
   }
+
+  
 
 }

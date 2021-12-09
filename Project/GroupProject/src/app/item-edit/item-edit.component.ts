@@ -1,4 +1,5 @@
 import { HttpClient } from '@angular/common/http';
+import { identifierName } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
@@ -24,11 +25,17 @@ export class ItemEditComponent implements OnInit {
     console.log(this.itemEditForm.value)
 
     await this.http
-      .post<any>(URL, 
+      .put<any>('http://127.0.0.1:5000/', 
         {
-
+          ItemName: this.itemEditForm.value.iname,
+          ItemPrice: this.itemEditForm.value.price,
+          ItemDescription: this.itemEditForm.value.itemDescription
         }
-      ).toPromise().then()
+      ).toPromise().then( response => {
+        console.log(response)
+      }
+    )
   }
+
 
 }
