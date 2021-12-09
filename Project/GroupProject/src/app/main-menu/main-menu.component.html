@@ -26,16 +26,15 @@ variables=[
 
 
 <div class="itemSet">
-    <app-item-preview></app-item-preview> 
-    <app-item-preview></app-item-preview>
-    <app-item-preview></app-item-preview>
-    <app-item-preview></app-item-preview>
-    <app-item-preview></app-item-preview> 
-    <app-item-preview></app-item-preview>
-    <app-item-preview></app-item-preview>
-    <app-item-preview></app-item-preview>
-    <app-item-preview></app-item-preview> 
-    <app-item-preview></app-item-preview>
-    <app-item-preview></app-item-preview>
-    <app-item-preview></app-item-preview>
+    <div *ngFor="let item of items">
+        <div class="itemPreview" role="menuitem">
+            <div class="card">
+                <img src="/assets/DuckLogo" alt="Avatar">
+                <div class="container">
+                  <h4><b>{{item.title}}</b></h4>
+                  <p>Price: ${{item.price}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

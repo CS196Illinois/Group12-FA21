@@ -26,7 +26,6 @@ export class ItemMenuComponent implements OnInit {
     this.email = this.route.snapshot.params['email'];
     this.phoneNumber = this.route.snapshot.params['phoneNumber'];
     this.location = this.route.snapshot.params['location'];
-
   }
 
 }
