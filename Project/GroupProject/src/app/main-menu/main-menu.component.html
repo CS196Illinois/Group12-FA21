@@ -26,13 +26,13 @@ variables=[
 
 
 <div class="itemSet">
-    <div *ngFor="let item of items" [routerLink]="['/item-menu']">
-        <div class="itemPreview" role="menuitem">
+    <div *ngFor="let item of items">
+        <div class="itemPreview" role="menuitem" [routerLink]="['/item', item.ItemID]">
             <div class="card">
                 <img src="/assets/DuckLogo" alt="Avatar">
                 <div class="container">
-                  <h4><b>{{item.title}}</b></h4>
-                  <p>Price: ${{item.price}}</p>
+                  <h4><b>{{item.ItemName}}</b></h4>
+                  <p>Price: ${{item.ItemPrice}}</p>
                 </div>
             </div>
         </div>

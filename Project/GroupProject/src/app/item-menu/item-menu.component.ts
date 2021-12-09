@@ -7,6 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./item-menu.component.scss']
 })
 export class ItemMenuComponent implements OnInit {
+  ItemID!: number;
 
   itemDescription!: String;
   price!: String;
@@ -19,13 +20,7 @@ export class ItemMenuComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.price = this.route.snapshot.params['price'];
-    this.itemDescription = this.route.snapshot.params['itemDescription'];
-    this.firstName = this.route.snapshot.params['firstName'];
-    this.lastName = this.route.snapshot.params['lastName'];
-    this.email = this.route.snapshot.params['email'];
-    this.phoneNumber = this.route.snapshot.params['phoneNumber'];
-    this.location = this.route.snapshot.params['location'];
+    this.ItemID = this.route.snapshot.params['itemID'];
   }
 
 }
