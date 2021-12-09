@@ -22,7 +22,7 @@ export class MainMenuComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     await this.http
-      .get<any>("http://127.0.0.1:5000/")
+      .get<any>("http://127.0.0.1:5000/item")
       .toPromise().then(response => {
         console.log(response)
         this.items = response;

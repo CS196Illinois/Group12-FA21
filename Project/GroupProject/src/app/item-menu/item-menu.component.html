@@ -8,9 +8,9 @@
   </iframe>
   <div class="itemDescription">
     <p style="text-align:center;">Item Description</p>
-    <p>{{itemDescription}}</p>
+    <p>{{item.ItemDescription}}</p>
     <p></p>
-    <p style="text-align:center;">Price: {{price}}</p>
+    <p style="text-align:center;">Price: {{item.ItemPrice}}</p>
   </div>
 </div>
 <!--
@@ -20,15 +20,15 @@
 <p></p>
 <form>
   <h2> Contact </h2>
-  <button type="button" style="margin:20px" [routerLink]="['item-edit', ItemID]">Edit Item</button>
+  <button type="button" style="margin:20px" [routerLink]="['/item-edit', ItemID]">Edit Item</button>
   <p></p>
-  <label for="fname">First Name: {{firstName}}</label><br>
+  <label for="fname">First Name: {{item.FirstName}}</label><br>
   <p></p>
-  <label for="fname">Last Name: {{lastName}}</label><br>
+  <label for="fname">Last Name: {{item.LastName}}</label><br>
   <p></p>
-  <label for="fname">Email: {{email}}</label><br>
+  <label for="fname">Email: {{item.Email}}</label><br>
   <p></p>
-  <label for="fname">Phone Number: {{phoneNumber}}</label><br>
+  <label for="fname">Phone Number: {{item.PhoneNumber}}</label><br>
   <p></p>
-  <label for="fname">Location: {{location}}</label><br>
+  <label for="fname">Location: {{item.Location}}</label><br>
 </form>
