@@ -9,16 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class MainMenuComponent implements OnInit {
   items: any = [
     {
-      "title": "test",
-      "price": 79
-    },
-    {
-      "title": "test2",
-      "price": 90
-    },
-    {
-      "title": "test3",
-      "price": 88
+      "ItemID": 0,
+      "ItemName": "Base Name",
+      "ItemDescription": "Base Description",
+      "ItemPrice": "Base Price"
     }
   ]
   loginStatus = 'Not logged in';
@@ -31,7 +25,7 @@ export class MainMenuComponent implements OnInit {
       .get<any>("http://127.0.0.1:5000/")
       .toPromise().then(response => {
         console.log(response)
-        // this.items = response;
+        this.items = response;
       }
     )
   }

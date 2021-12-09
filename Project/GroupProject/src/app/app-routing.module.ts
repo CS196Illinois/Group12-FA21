@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: '', component: MainMenuComponent },
   { path: 'edit-profile', component: EditProfileComponent },
   { path: 'item-edit', component: ItemEditComponent },
-  { path: 'item-menu', component: ItemMenuComponent }, 
+  { path: 'item/:itemID', component: ItemMenuComponent }, 
   { path: 'main-menu', component: MainMenuComponent }, 
   { path: 'profile', component: ProfileComponent }, 
 ];
